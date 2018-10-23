@@ -35,7 +35,7 @@ class Template(object):
     # --> Sub callback function, one per intent
     def askJoke_callback(self, hermes, intent_message):
         # terminate the session first if not continue
-        hermes.publish_end_session(intent_message.session_id, "")
+        #hermes.publish_end_session(intent_message.session_id, "")
 
         # action code goes here...
         good_category = requests.get("https://api.chucknorris.io/jokes/categories").json();
